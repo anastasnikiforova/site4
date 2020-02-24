@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ru">
+
+ <head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-wedth,initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">  
+  <title>Задание под номером №4 от Никифоровой Анастасии</title>
+ </head>
+
+ <body class="p-0 m-0">
+  <header class="container-fluid p-0 m-0">
+    <div class="container">
+      <img id="logo" src="pic2.png" width="100" height="100" alt="Будущее наступило"/>
+      <a>Задание под номером №4 от Никифоровой Анастасии</a>
+     </div>
+  </header>
+  <nav id="navigation">
+    <div class="container">
+      <div class="row">
+          <a class="col-sm-12 col-md-3 bg-primary" href="#spisok">Список</a>
+          <a class="col-sm-12 col-md-3 bg-info" href="#tabl">Таблица</a>
+          <a class="col-sm-12 col-md-3 bg-primary" href="#form">Форма</a>
+          <a class="col-sm-12 col-md-3 bg-info" href="#podval">Подвал</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container justify-content-sm-center p=0 m=0" id="spisok">
+    <div>
+      <h2>Задания с гиперссылками</h2>
+        <ol>
+          <li><a href="http://example.com">Абсолютная гиперссылка на страницу сайта</a></li>
+          <li><a href="https://example.com">Абсолютная гиперссылка с протоколом https</a></li>
+          <li><a href="ftp://ftp.mccme.ru/pub/metapost.README">Ссылка на файл на сервере FTP без авторизации</a></li>
+          <li><a href="ftp://user:password@example.com/ftp.mccme.ru/pub/metapost.README">Ссылка на файл на сервере FTP с авторизацией</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Pascal_(programming_language)#Implementations">Ссылка на фрагмент страницы Википедиа Pascal</a></li>
+          <li><a href="#top1">Фрагмент текущего сайта</a></li>
+          <li><a href="http://example.com/about.html?id=6815e148ff1c4aee8dc7159816380a4d&webmap=9cf053ea602345ddae060010c470e615">Ссылка с двумя параметрами в URL</a></li>
+          <li>
+            <nav>
+              <a href="#top2">Гиперссылка на Title</a>
+              <br>
+              <a href="#form">Ссылка к форме </a>
+            </nav>
+          </li>
+          <li><a>Cсылка без HREF</a></li>
+          <li><a href="#">Пустой HREF</a></li>
+          <li><a href="http://example.com" rel="nofollow">Поисковики не переходят</a></li>
+          <li><!--noindex--><a href="http://example.com/about" >Не индексируется поисковикам</a><!--/noindex--></li>
+          <li><p>Ссылка в <a href="http://example.com">тексте</a> абзаца</p></li>
+          <li><a href="https://moodle.kubsu.ru/mod/"><img src="https://f.vividscreen.info/soft/47f3e7006c4a8771a7a98915afc2964b/Pepsi-Design-480x640.jpg" width="480" 
+          height="640"  alt="Картинка-ссылка"></a></li>
+          <li>
+            Прямоугольная область в левом верхнем угле, круглая область - в центре значка Pepsi"
+            <br>
+            <img src="https://f.vividscreen.info/soft/47f3e7006c4a8771a7a98915afc2964b/Pepsi-Design-480x640.jpg" width="480" 
+             height="640" alt="Ссылки из прямоугольных и круглых областей картинки" usemap="#newimg">
+            <map name="newimg">
+              <area shape="rect" coords="0,0,100,80" alt="Левый угол" href="https://moodle.kubsu.ru/course/">
+              <area shape="circle" coords="200,350,100" alt="Центр Пепси" href="https://en.wikipedia.org/wiki/Frank_Borman">
+            </map>
+          </li>  
+	  <li><a href="./file.html">Относительная на страницу в текущем каталоге</a></li>  			<!-- Условное положение в https://nikiforova_a.gitlab.io/site3/-->
+      <li><a href="./about">Относительная на страницу в каталоге about</a></li>  			    <!--Условное положение в https://nikiforova_a.gitlab.io/site3/uplvl/blogs-->
+      <li><a href="./uplvl">Относительная на страницу уровнем выше текущего</a></li>        		<!-- Условное положение в https://nikiforova_a.gitlab.io/site3/uplvl/blogs/-->
+      <li><a href="./">Относительная на страницу двумя уровнями выше</a></li>  	  			    <!-- Условное положение в https://nikiforova_a.gitlab.io/site3/uplvl/blogs/-->
+      <li><a href="./">Сокращенная на главную</a></li>  											<!-- Условное положение в https://nikiforova_a.gitlab.io/site3/uplvl/blogs/-->
+      <li><a href="./about">Сокращенная ссылку на внутреннюю</a></li> 							<!-- Условное положение в https://nikiforova_a.gitlab.io/site3/uplvl/blogs/-->
+      </ol>
+    </div>
+    <div class="row flex-column-reverse flex-md-row">
+      <div class="col-md-12" id="tabl">
+        <div class="col-sm-12 col-sm-order-12 " >
+          <h2>Задание с таблицей</h2>
+          <table >
+            <tbody>
+              <tr>
+                <th>Столбец1</th>
+                <th>Столбец2</th>
+                <th>Столбец3</th>
+              </tr>
+              <tr>
+                <td colspan="2">Обьединение ячеек 1-2</td>
+                <td>Ячейка3</td>
+              </tr>
+              <tr>
+                <td>Ячейка1</td>
+                <td>Ячейка2</td>
+                <td>Ячейка3</td>
+              </tr>
+              <tr>
+                <td colspan="3">Объединение ячеек 1-2-3</td>
+              </tr>
+              <tr>
+                <td>Ячейка1</td>
+                <td>Ячейка2</td>
+                <td>Ячейка3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+     </div>
+     <div class="col-md-12" id="form">
+        <div class="col-sm-12 col-sm-order-1">
+          <h2> Задания с формой </h2>
+          <form action="http://example.com" method="POST">
+            <label>
+              Имя: 
+              <br>
+              <input name="field-name-1" value="Введите имя">
+            </label>
+            <br>
+            <label>
+              E-mail:
+              <br>
+              <input name="field-email" value="введите@почту.com" type="email">
+            </label>
+            <br>
+            <label>
+               Дата рождения:
+               <br>
+               <input name="field-date" value="2019-01-01" type="date" >
+            </label>
+            <br>
+            Пол:
+            <br>
+            <label>
+               <input type="radio" checked="checked" name="radio-group-1" value="Значение 1">
+               Мужской
+            </label>
+            <label>
+               <input type="radio"  name="radio-group-1" value="Значение 2">
+               Женский
+            </label>
+            <label>
+              <input type="radio"  name="radio-group-1" value="Значение 3">
+              Странное
+            </label>
+            <label>
+               <input type="radio"  name="radio-group-1" value="Значение 4">
+                Универсальное
+            </label>
+            <br>
+            Количество пальцев:
+            <br>
+            <label>
+              <input type="radio"  name="radio-group-2" value="Значение 1">
+              1
+            </label>
+            <label>
+              <input type="radio"  name="radio-group-2" value="Значение 2">
+              2
+            </label>
+            <label>
+              <input type="radio" name="radio-group-2" value="Значение 3">
+              3
+            </label>
+            <label>
+              <input type="radio"  name="radio-group-2" value="Значение 4">
+              4
+            </label>
+            <label>
+              <input type="radio"  name="radio-group-2" value="Значение 5">
+              5
+            </label>
+            <label>
+              <input type="radio"  name="radio-group-2" value="Значение 6">
+              93
+            </label>
+            <br>
+            Сверхспособности:
+            <br>
+            <label>
+              <input type="checkbox" name="check-1">
+              Непробиваемые нервы
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="check-1">
+              Походочка от бедра
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="check-1">
+              Вечный недосып
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="check-1">
+              Коммунист-патриот
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="check-1">
+              Бездонный желудок
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="check-2">
+             С контрактом ознакомлен
+            </label>
+            <br>
+            <label>
+              Биография:
+              <br>
+              <textarea name="field-name-2">Напишите о себе</textarea>
+              <br>
+            </label>
+            <br>
+            <input type="submit" value="Отправить">
+          </form>
+        </div>
+    </div>
+    </div>
+  </div>
+  <footer class="container-fluid p-0 m-0" id="podval">
+    <div class="container">
+        (с) Никифорова Анастасия, КубГУ 2019
+    </div>
+  </footer>
+ </body>
+</html>
